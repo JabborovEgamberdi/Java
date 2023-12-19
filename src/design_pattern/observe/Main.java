@@ -11,5 +11,9 @@ public class Main {
         subject.addObserver(observer2);
 
         subject.notifyObservers("Salom observerlar!");
+        subject.removeObserver(observer1);
+        subject.removeObserver(observer2);
+        subject.notifyObservers("Salom observerlar!");
+
     }
 }
